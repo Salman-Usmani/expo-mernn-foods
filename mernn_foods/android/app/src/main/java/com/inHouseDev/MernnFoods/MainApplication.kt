@@ -1,4 +1,4 @@
-package com.mernn_foods
+package com.inHouseDev.MernnFoods
 
 import android.app.Application
 import android.content.res.Configuration

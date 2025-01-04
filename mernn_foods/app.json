@@ -18,7 +18,8 @@
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.inHouseDev.MernnFoods"
+      "package": "com.inHouseDev.MernnFoods",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",

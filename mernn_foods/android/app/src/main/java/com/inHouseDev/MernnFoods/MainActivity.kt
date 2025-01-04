@@ -1,4 +1,4 @@
-package com.mernn_foods
+package com.inHouseDev.MernnFoods
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
