@@ -9,14 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist"
+
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mernn_foods"
+      "package": "com.inHouseDev.MernnFoods"
     },
     "web": {
       "bundler": "metro",
@@ -26,7 +28,9 @@
     "plugins": [
       "expo-router",
       [
-        "@react-native-google-signin/google-signin"
+        "@react-native-google-signin/google-signin", {
+          "iosUrlScheme" : "com.inHouseDev.MernnFoods"
+        }
       ],
       [
         "expo-splash-screen",
