@@ -29,9 +29,7 @@
     "plugins": [
       "expo-router",
       [
-        "@react-native-google-signin/google-signin", {
-          "iosUrlScheme" : "com.inHouseDev.MernnFoods"
-        }
+        "@react-native-google-signin/google-signin"
       ],
       [
         "expo-splash-screen",

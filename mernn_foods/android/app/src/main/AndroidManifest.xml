@@ -26,6 +26,7 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="myapp"/>
         <data android:scheme="com.inHouseDev.MernnFoods"/>
+        <data android:scheme="exp+mernn-foods"/>
       </intent-filter>
     </activity>
   </application>

@@ -3,14 +3,12 @@ import { Text, View } from 'react-native';
 
 import { useSession } from '@/context/ctx';
 import {
-  GoogleOneTapSignIn,
+  GoogleSignin,
+  GoogleSigninButton,
   statusCodes,
-  type OneTapUser,
 } from '@react-native-google-signin/google-signin';
 
-GoogleOneTapSignIn.configure({
-  webClientId: 'autoDetect',
-});
+
 
 export default function SignIn() {
   const { signIn } = useSession();
