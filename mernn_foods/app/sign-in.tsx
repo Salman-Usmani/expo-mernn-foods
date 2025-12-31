@@ -11,10 +11,15 @@ import {
 
 
 export default function SignIn() {
-  const { signIn } = useSession();
+  const { signIn, isLoading } = useSession();
+  console.log('first')
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text
+      <GoogleSigninButton size={GoogleSigninButton.Size.Wide}
+        color={GoogleSigninButton.Color.Dark}
+        disabled={isLoading}
+         onPress={signIn} />
+      {/* <Text
         onPress={() => {
           signIn();
           // Navigate after signing in. You may want to tweak this to ensure sign-in is
@@ -22,7 +27,7 @@ export default function SignIn() {
           router.replace('/');
         }}>
         Sign In
-      </Text>
+      </Text> */}
     </View>
   );
 }

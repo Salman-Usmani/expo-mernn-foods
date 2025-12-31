@@ -7,6 +7,7 @@ import {
   isSuccessResponse,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
+import { router } from 'expo-router';
 
 // Somewhere in your code
 
@@ -42,9 +43,9 @@ export function SessionProvider({ children }: PropsWithChildren) {
   const signIn = async () => {
     try {
       GoogleSignin.configure({
-        // webClientId: '<FROM DEVELOPER CONSOLE>', // client ID of type WEB for your server. Required to get the `idToken` on the user object, and for offline access.
+        webClientId: '919118312240-sgirii490nit0d2sove3r3oeskcblosi.apps.googleusercontent.com', // client ID of type WEB for your server. Required to get the `idToken` on the user object, and for offline access.
         scopes: ['https://www.googleapis.com/auth/drive.readonly'], // what API you want to access on behalf of the user, default is email and profile
-        // offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
+        offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
         // hostedDomain: '', // specifies a hosted domain restriction
         forceCodeForRefreshToken: false, // [Android] related to `serverAuthCode`, read the docs link below *.
         accountName: '', // [Android] specifies an account name on the device that should be used
@@ -57,7 +58,9 @@ export function SessionProvider({ children }: PropsWithChildren) {
       const response = await GoogleSignin.signIn();
       console.log('response', response)
       if (isSuccessResponse(response)) {
+        router.push('/(app)')
         console.log('response.data', response.data)
+
         // setState({ userInfo: response.data });
       } else {
         // sign in was cancelled by user
