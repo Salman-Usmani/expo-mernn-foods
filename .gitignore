@@ -28,5 +28,5 @@ yarn-error.log*
 
 
 # Ignore android everywhere
-android/
-ios/
+ mernn_foods/android/
+ mernn_foods/ios/
