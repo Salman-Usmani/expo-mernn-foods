@@ -28,5 +28,8 @@ yarn-error.log*
 
 
 # Ignore android everywhere
- mernn_foods/android/
- mernn_foods/ios/
+android/
+ios/
+.expo/
+expo-env.d.ts
+
